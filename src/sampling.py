@@ -9,6 +9,7 @@ from vae_model import VAE
 from constants import max_length, input_dim, latent_dim, hidden_dim
 from utils import decode_one_hot_sequence, PAD_TOKEN
 
+
 def parse_args():
     parser = ap.ArgumentParser(description="Generate sequences with a trained VAE.")
     parser.add_argument(
@@ -30,6 +31,7 @@ def parse_args():
         help="Path to the output file."
     )
     return parser.parse_args()
+
 
 def main(
         weights_path: str,

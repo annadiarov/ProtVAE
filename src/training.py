@@ -86,6 +86,7 @@ def main(
     abs_output_weights = os.path.realpath(output_weights)
     print(f"Model weights saved to {abs_output_weights}")
 
+
 if __name__ == "__main__":
     args = parse_args()
     fasta_file = args.fasta_file
